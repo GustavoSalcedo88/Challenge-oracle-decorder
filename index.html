@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Imagen icono-->
+    <link rel="shortcut icon" href="img/Logo.ico" type="image/x-icon">
+    <!--Reset css-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--CSS style--> 
+    <link rel="stylesheet" href="css/style.css">   
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <!--IMAGEN lOGO-->
+        <div class="header">
+            <img src="img/Logo.png" class="headerLogo" alt="Logotipo Alura">
+        </div>
+    </header>
+    <main>
+        <div class="principal">
+            <!--===Lado izquierdo===-->
+        <div class="izquierda">
+            <!--TextArea-->
+        <textarea id="textUser" class="textoUsuario" placeholder="Ingresa texto aqui"></textarea>
+        <!--/TextArea-->
+        <div class="pieIzq">
+            <p class="infoizq">Solo minusculas y sin acentos</p>
+            <div class="izqBtn">
+                <button id="btnEncriptar" class="btnEncriptar">Encriptador</button>
+                <button id="btnDesencriptar" class="btnDesencriptar">Desencriptador</button>
+            </div>
+        </div>
+        </div>
+        <!--===/Lado izquierdo===-->
+        <!--===Lado derecho===-->
+        <div id="derecha" class="derecha ajustar">
+            <img id="muñeco" src="img/Muñeco.png" class="muñeco" alt="Muñeco">
+            <textarea id="mensajeFinal" class="resultado ajustar" placeholder="Ningun mensaje fue encontrado"></textarea>
+            <!--<p id="mensajeFinal" class="resultado ajustar">Ningun mensaje fue encontrado</p>-->
+            <p id="info-derecha" class="infoDerecha">Ingresa el texto que deses encriptar o desencriptar</p>
+            <button id="btn-Copiar" class="btnCopiar ocultar">copiar</button>
+        </div>
+        </div>
+        <!--===/Lado derecho===-->
+    </main>
+    <footer>
+        <div class="pieDePagina">
+            <div><p> Desarrollado por Gustavo Salcedo Campa</p></div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
